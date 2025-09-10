@@ -11,21 +11,17 @@ html{
 body{
     background: linear-gradient(135deg, #1c1c1c, #2c2c2c);
     font-family: 'Poppins', sans-serif;
+    font-size: 16px;
 }
 
 a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
     color: #0ed9e0;
     text-decoration: none;
     position: relative;
-}
-
-a:hover{
-    background-color: rgba(255, 255, 255, 0.185);
-    border-radius: 20px;
 }
 
 a:hover span {
@@ -79,6 +75,8 @@ li{
 
 .container{
     padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .center-section {
@@ -97,18 +95,20 @@ li{
     justify-content: center;
 }
 
-h1 a.logo{
-    text-align: center;
-    color: white;
-    font-size: 40px;
+.home-alt h1 a.logo {
+    display: inline-block;
+    color: #0ed9e0;
+    font-size: 2.5rem;
     list-style: none;
     text-decoration: none;
+    border-radius: 10px;
+    bottom: 50px;
 }
 
 h1{
     text-align: center;
     color: white;
-    font-size: 40px;
+    font-size: 2.5rem;
     list-style: none;
     text-decoration: none;
 }
@@ -137,12 +137,14 @@ img{
     min-height: 100vh;
     background: linear-gradient(135deg, #1c1c1c, #2c2c2c);
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     color: #fff;
-    padding: 40px 20px;
+    padding: 50px 20px;
     text-align: center;
 }
+
 
 .home-alt .logo {
     font-size: 2.5rem;
@@ -217,25 +219,49 @@ img{
     color: #1c1c1c;
 }
 
-.card{
+.about-section {
+    text-align: center;
+    padding: 50px 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 20px;
     justify-content: center;
-    padding: 20px;
-    background-color: #2c2c2c;
-    border-radius: 20px;
-    border: black solid 2px;
-    width: 100%;            
-    max-width: 400px;      
-    margin: 0 auto;
+    align-items: center;
 }
 
-.image{
+.about-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    color: #0ed9e0;
+}
+
+.card{
+    background: #2c2c2c;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;       /* تفضل متوسطنه */
+    max-width: 100%;      /* تمنعها تطلع بره */
+}
+
+.image img {
+    width: 100%;
+    max-width: 200px;     /* أكبر حجم ليها */
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .content{
@@ -243,6 +269,10 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    max-width: 650px;
 }
 
 .bio{
@@ -257,20 +287,30 @@ img{
     line-height: 1.5;
 }
 
-.skills-table {
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
     margin: 20px auto;
-    border-collapse: collapse;
-    width: 80%;
     max-width: 800px;
+    padding: 10px;
 }
 
-.skills-table td {
-    border: 1px solid #444;
+.skill {
+    flex: 1 1 calc(33.33% - 20px);
+    min-width: 120px;
     padding: 15px;
-    font-size: 18px;
-    color: #0ed9e0;
     text-align: center;
+    border: 1px solid #444;
+    color: #0ed9e0;
+    font-size: 18px;
     transition: 0.3s ease;
+}
+
+.skill:hover {
+    background: #0ed9e0;
+    color: #1c1c1c;
 }
 
 .skills-table td:hover {
@@ -287,8 +327,8 @@ img{
 
 .projects-section h1 {
     font-size: 2.5rem;
-    margin-bottom: 40px;
-    color: #00c4ff;
+    margin-bottom: 60px;
+    color: #0ed9e0;
 }
 
 .projects-container {
@@ -320,11 +360,11 @@ img{
 
 .project-card h3 {
     margin: 15px 0 10px;
-    color: #00c4ff;
+    color: #0ed9e0;
 }
 
 .project-card p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     padding: 0 15px 15px;
     color: #ddd;
 }
@@ -333,16 +373,24 @@ img{
     display: inline-block;
     margin: 10px 0 20px;
     padding: 8px 15px;
-    background: #00c4ff;
+    background: #0ed9e0;
     color: #000;
     font-weight: bold;
-    border-radius: 8px;
+    border-radius: 25px;
     text-decoration: none;
-    transition: background 0.3s ease;
+    transition: 0.3s;
 }
 
 .project-btn:hover {
-    background: #00a0cc;
+    border-radius: 25px;
+    background: white;
+    color: #0ed9e0;
+}
+
+.btns {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
 }
 
 .contact-section {
@@ -410,8 +458,7 @@ img{
 
 .social-links a {
     font-size: 1.5rem;
-    color: #0ed9e0;
-    transition: 0.3s;
+    color: #0ed9e0;transition: 0.3s;
 }
 
 .social-links a:hover {
