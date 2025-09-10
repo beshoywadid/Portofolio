@@ -18,7 +18,7 @@
     </nav>
     <section id="home" class="home-alt">
     <div class="container">
-    <h1 class="logo"><a href="index.html">Portofolio</a></h1>
+    <h1 class="logo"><a href="index.html" class="logo">Portofolio</a></h1>
     <div class="profile-box">
     <img src="assests/images/profile.jpg" alt="Profile Picture" class="profile-img">
     <div class="profile-text">
@@ -32,7 +32,7 @@
     </div>
 </div>
     </section>
-    <section id="about">
+    <section id="about" class="about-section">
     <div class="container">
         <h1>About Me</h1>
         <div class="card">
@@ -43,23 +43,17 @@
                 <p class="bio">Hello, I'm Beshoy Wadid. I'm 20 years old. I Studied in Computer Science at Nahda University.
                 I'm a Junior web developer and a Soc analyst Trainee.</p>
                 <p class="bio"><b>Skills</b></p>
-                <table class="skills-table">
-                    <tr>
-                        <td>HTML</td>
-                        <td>CSS</td>
-                        <td>JavaScript</td>
-                    </tr>
-                    <tr>
-                        <td>Python</td>
-                        <td>C++</td>
-                        <td>C</td>
-                    </tr>
-                    <tr>
-                        <td>Linux</td>
-                        <td>Data Structure</td>
-                        <td>Problem Solving</td>
-                    </tr>
-                </table>
+                <div class="skills-container">
+                    <div class="skill">HTML</div>
+                    <div class="skill">CSS</div>
+                    <div class="skill">JavaScript</div>
+                    <div class="skill">Python</div>
+                    <div class="skill">C++</div>
+                    <div class="skill">C</div>
+                    <div class="skill">Linux</div>
+                    <div class="skill">Data Structure</div>
+                    <div class="skill">Problem Solving</div>
+                </div>
             </div>
         </div>
     </div>
@@ -72,35 +66,50 @@
                 <img src="assests/images/project1.png" alt="Project 1">
                 <h3>Blue Crystal</h3>
                 <p>This website is talking about Programming languages And Learn it.</p>
-                <a href="https://beshoywadid.github.io/Blue-Crystal/" target="_blank" class="project-btn">View Project</a>
+                <div class="btns">
+                    <a href="https://beshoywadid.github.io/Blue-Crystal/" target="_blank" class="project-btn">Demo</a>
+                    <a href="https://github.com/beshoywadid/Blue-Crystal" target="_blank" class="project-btn">Repo</a>
+                </div>
             </div>
         <!-- Project 2 -->
             <div class="project-card">
                 <img src="assests/images/project2.png" alt="Project 2">
                 <h3>CAFÉ</h3>
                 <p>This website is talking about the CAFÉ.</p>
-                <a href="https://beshoywadid.github.io/CAFE/" target="_blank" class="project-btn">View Project</a>
+                <div class="btns">
+                    <a href="https://beshoywadid.github.io/CAFE/" target="_blank" class="project-btn">Demo</a>
+                    <a href="https://github.com/beshoywadid/CAFE" target="_blank" class="project-btn">Repo</a>
+                </div>
             </div>
         <!-- Project 3 -->
             <div class="project-card">
                 <img src="assests/images/project3.png" alt="Project 3">
                 <h3>Dashboard</h3>
                 <p>This Website is talking about statics of an employee at company.</p>
-                <a href="https://beshoywadid.github.io/website/" target="_blank" class="project-btn">View Project</a>
+                <div class="btns">
+                    <a href="https://beshoywadid.github.io/website/" target="_blank" class="project-btn">Demo</a>
+                    <a href="https://github.com/beshoywadid/website" target="_blank" class="project-btn">Repo</a>
+                </div>
             </div>
         <!-- Project 4 -->
             <div class="project-card">
                 <img src="assests/images/project4.png" alt="Project 4">
                 <h3>Titan Gym</h3>
                 <p>This website is talking about the GYM.</p>
-                <a href="https://beshoywadid.github.io/Titan-Gym/" target="_blank" class="project-btn">View Project</a>
+                <div class="btns">
+                    <a href="https://beshoywadid.github.io/Titan-Gym/" target="_blank" class="project-btn">Demo</a>
+                    <a href="https://github.com/beshoywadid/Titan-Gym" target="_blank" class="project-btn">Repo</a>
+                </div>
             </div>
         <!-- Project 5 -->
             <div class="project-card">
                 <img src="assests/images/project5.png" alt="Project 5">
                 <h3>Mood Selector</h3>
                 <p>This website is talking about your mood as a user.</p>
-                <a href="https://beshoywadid.github.io/Mood-Selector/" target="_blank" class="project-btn">View Project</a>
+                <div class="btns">
+                    <a href="https://beshoywadid.github.io/Mood-Selector/" target="_blank" class="project-btn">Demo</a>
+                    <a href="https://github.com/beshoywadid/Mood-Selector" target="_blank" class="project-btn">Repo</a>
+                </div>
             </div>
         </div>
     </section>
@@ -128,9 +137,9 @@
                 <a href="https://www.facebook.com/besho.prince.71/"><i class="fab fa-facebook"></i></a>
             </div>
             <div class="social-links">
-                <a href="assests/PDFs/cv.pdf">cv<i class="fas fa-file-alt"></i></a>   <!-- CV -->
-                <a href="assests/PDFs/cover-letter.pdf">cover-letter<i class="fas fa-file-signature"></i></a> <!-- Cover Letter -->
-                <a href="assests/PDFs/resume.pdf">resume<i class="fas fa-file"></i></a>   <!-- Resume -->
+                <a href="assests/PDFs/cv.pdf"><i class="fas fa-file-alt"><p>cv</p></i></a>   <!-- CV -->
+                <a href="assests/PDFs/cover-letter.pdf"><i class="fas fa-file-signature"><p>cover-letter</p></i></a> <!-- Cover Letter -->
+                <a href="assests/PDFs/resume.pdf"><i class="fas fa-file"><p>resume</p></i></a>   <!-- Resume -->
             </div>
         </div>
         <form class="contact-form">
